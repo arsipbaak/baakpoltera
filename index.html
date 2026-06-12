@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Layanan Digital - BAAK POLTERA</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; }
+    .bg-poltera-navy { background-color: #1e3a8a; }
+    .text-poltera-navy { color: #1e3a8a; }
+    .bg-poltera-accent { background-color: #f59e0b; }
+    .hover-scale { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .hover-scale:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+  </style>
+</head>
+<body class="text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 bg-poltera-navy text-white rounded-lg flex items-center justify-center text-xl shadow-md">
+          <i class="fas fa-university"></i>
+        </div>
+        <div>
+          <h1 class="font-extrabold text-lg tracking-tight text-slate-900 uppercase">Politeknik Negeri Madura</h1>
+          <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Portal Layanan Terpadu</p>
+        </div>
+      </div>
+      <div class="hidden md:flex gap-6 text-sm font-semibold text-slate-500">
+        <a href="#" class="hover:text-poltera-navy transition">Beranda</a>
+        <a href="#" class="hover:text-poltera-navy transition">Panduan</a>
+        <a href="#" class="hover:text-poltera-navy transition">Bantuan IT</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-poltera-navy text-white py-20 px-6 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-10 w-72 h-72 bg-poltera-accent rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="bg-white/10 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider mb-6 inline-block backdrop-blur-sm border border-white/20">AKSES SINGLE SIGN-ON</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Selamat Datang di <br><span class="text-poltera-accent">Sistem Digital POLTERA</span></h2>
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto">Satu pintu untuk semua kebutuhan administrasi, akademik, dan layanan kemahasiswaan Anda. Pilih aplikasi yang ingin Anda tuju di bawah ini.</p>
+    </div>
+  </section>
+
+  <main class="flex-1 max-w-7xl mx-auto px-6 py-16 w-full -mt-10 relative z-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <a href="https://script.google.com/macros/s/AKfycbzeMR30NCObTpwZOmEZ4RafoFMzMKSsAFeN1nJs0kSGY2c4PMnDo3-X8XOoE8qtaF1kVw/exec" target="_blank" class="block bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover-scale group cursor-pointer relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+        <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+          <i class="fas fa-envelope-open-text"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-blue-600 transition-colors">E-Surat Akademik</h3>
+        <p class="text-xs text-slate-500 leading-relaxed mb-6">Layanan pengajuan surat pernyataan masih kuliah terintegrasi TTE (Tanda Tangan Elektronik) QR Code.</p>
+        <div class="flex items-center text-xs font-bold text-blue-600">
+          Buka Aplikasi <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+        </div>
+      </a>
+
+      <a href="https://siakad.poltera.ac.id" target="_blank" class="block bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover-scale group cursor-pointer relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500"></div>
+        <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-emerald-600 transition-colors">SIAKAD Terpadu</h3>
+        <p class="text-xs text-slate-500 leading-relaxed mb-6">Sistem Informasi Akademik untuk melihat nilai, jadwal kuliah, KRS, dan biodata mahasiswa.</p>
+        <div class="flex items-center text-xs font-bold text-emerald-600">
+          Buka Aplikasi <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" class="block bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover-scale group cursor-pointer relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1 h-full bg-amber-500"></div>
+        <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-xl flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-amber-500 transition-colors">E-Learning (SPADA)</h3>
+        <p class="text-xs text-slate-500 leading-relaxed mb-6">Portal pembelajaran daring, materi perkuliahan, pengumpulan tugas, dan absensi digital.</p>
+        <div class="flex items-center text-xs font-bold text-amber-500">
+          Buka Aplikasi <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="bg-white border-t border-slate-200 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs font-semibold text-slate-400">
+        &copy; 2026 Politeknik Negeri Madura. Hak Cipta Dilindungi.
+      </p>
+      <div class="flex gap-4">
+        <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-poltera-navy hover:text-white transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-poltera-navy hover:text-white transition"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 hover:bg-poltera-navy hover:text-white transition"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
